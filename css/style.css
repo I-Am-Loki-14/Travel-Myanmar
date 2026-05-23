@@ -142,11 +142,7 @@
 }
 
 .destination-image-carousel {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
   flex: 1 1 20rem;
-  flex-wrap: wrap;
   position: relative;
   height: 400px;
   overflow: hidden;
@@ -157,9 +153,8 @@
 .destination-image-carousel .carousel-inner {
   height: 100%;
   width: 100%;
-  flex: 1 1 20rem;
   position: relative;
-  /* background-color: red; */
+  display: block;
 }
 
 .destination-image-carousel .carousel-item {
@@ -205,7 +200,6 @@
 
 .destination-content {
   flex: 1 1 20rem;
-  display: flex;
   flex-wrap: wrap;
   justify-content: start;
   align-items: center;
@@ -359,13 +353,12 @@
 
   .destination-image-carousel,
   .destination-content {
-    flex: 1 1 100%;
-    max-width: 100%;
+    /* flex: 1 1 100%; */
     width: 100%;
   }
 
   .destination-image-carousel {
-    height: 300px; /* Reduced height for tablet/mobile */
+    height: 300px;
   }
 
   .destination-content {
