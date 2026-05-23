@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel Myanmar</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Navigation Bar Section -->
     <nav class="navbar">
         <div class="logo">Travel Myanmar</div>
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Destination</a></li>
-            <li><a href="#">Visit Place</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destination">Destination</a></li>
+            <li><a href="#gallery">Visit Place</a></li>
+            <li><a href="#contact">Contact Us</a></li>
         </ul>
         <div class="hamburger">
             <span></span>
@@ -23,7 +25,7 @@
             <span></span>
         </div>
     </nav>
-    <!-- home section start -->
+    <!-- Home Hero Section with Booking Form -->
     <section class="home" id="home">
         <div class="form-container">
             <form action="">
@@ -55,27 +57,107 @@
             </form>
         </div>
     </section>
-    <!-- home section end  -->
-    <!-- destination section start  -->
+    <!-- End Home Section -->
+    <!-- Destination Showcase Section with Carousel -->
     <section class="destination" id="destination">
         <div class="destination-image-carousel">
             <div class="carousel-inner">
                 <img src="./image/myanmar.jpg" alt="Bagan" class="carousel-item active">
-                <img src="./image/istockphoto-481873894-612x612.jpg" alt="Bagan" class="carousel-item">
-                <img src="./image/caption (2).jpg" alt="Bagan" class="carousel-item">
+                <img src="./image/bagan3.jpg" alt="Bagan" class="carousel-item">
+                <img src="./image/bagan2.jpg" alt="Bagan" class="carousel-item">
+                <img src="./image/beach.webp" alt="Bagan" class="carousel-item">
+                <img src="./image/Inle-Lake-1.jpg" alt="Bagan" class="carousel-item">
             </div>
             <button class="carousel-control prev">&#10094;</button>
             <button class="carousel-control next">&#10095;</button>
         </div>
         <div class="destination-content">
             <h2>ရွှေရောင်ဆည်းဆာနှင့် ပုဂံကဗျာ</h2>
-            <p>ရှေးဟောင်းစေတီပုထိုးများစွာ ကိန်းဝပ်စိုးစံရာ ပုဂံမြေပြင်ထက်သို့ ညို့မှိုင်းတဲ့ နေဝင်ဆည်းဆာ အလင်းတန်းများ
+            <p>ရှေးဟောင်းစေတီပုထိုးများစွာ ကိန်းဝပ်စိုးစံရာ ပုဂံမြေပြင်ထက်သို့ ညို့မှိုင်းတဲ့ နေဝင်ဆည်းဆာ
+                အလင်းတန်းများ
                 ဖြာကျနေသည့် မြင်ကွင်းဖြစ်ပါသည်။ စိမ်းစိုနေသော သစ်တောအုပ်များနှင့် မြူခိုးဝေဝေကြားတွင် ထည်ဝါစွာ
                 မတ်တပ်ရပ်နေသည့် ဘုရားပုထိုးများက ရာစုနှစ်များစွာက အတိတ်သမိုင်းကြောင်းကို ဖော်ပြနေပါတယ်။</p>
-            <a href="#" class="btn">See More</a>
+            <a href="###" class="btn">See More</a>
         </div>
     </section>
-    <!-- destination section end  -->
+    <!-- End Destination Section -->
+
+    <!-- Gallery Section Start -->
+    <section class="gallery" id="gallery">
+        <h1 class="heading">Travel <span>Gallery</span></h1>
+        <div class="gallery-container">
+            <!-- Gallery Image items (at least 6) -->
+            <div class="gallery-item"><img src="./image/myanmar.jpg" alt="Myanmar Landscape"></div>
+            <div class="gallery-item"><img src="./image/bagan3.jpg" alt="Bagan Temple Sunrise"></div>
+            <div class="gallery-item"><img src="./image/bagan2.jpg" alt="Ancient Architecture"></div>
+            <div class="gallery-item"><img src="./image/myanmar.jpg" alt="Cultural Heritage"></div>
+            <div class="gallery-item"><img src="./image/bagan3.jpg" alt="Scenic View"></div>
+            <div class="gallery-item"><img src="./image/beach.webp" alt="Ngapali Beach"></div>
+            <div class="gallery-item"><img src="./image/bagan3.jpg" alt="Bagan Temple Sunrise"></div>
+            <div class="gallery-item"><img src="./image/bagan2.jpg" alt="Ancient Architecture"></div>
+        </div>
+    </section>
+    <!-- Gallery Section End -->
+
+    <!-- Lightbox Modal for Large Photo View -->
+    <div class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img src="./image/bagan1.jpg" alt="Large View">
+    </div>
+
+    <!-- Contact Us Section Start -->
+    <section class="contact" id="contact">
+        <h1 class="heading">Contact <span>Us</span></h1>
+        <div class="contact-container">
+            <!-- Left Side: Auto-sliding Image Showcase -->
+            <div class="contact-image-slider">
+                <img src="./image/myanmar.jpg" class="contact-slide active" alt="Scenic Myanmar">
+                <img src="./image/bagan2.jpg" class="contact-slide" alt="Bagan Temple">
+                <img src="./image/beach.webp" class="contact-slide" alt="Ngapali Beach">
+                <img src="./image/Inle-Lake-1.jpg" class="contact-slide" alt="Inlay">
+            </div>
+
+            <!-- Right Side: Contact Form -->
+            <div class="contact-form-wrapper">
+                <form action="#">
+                    <h3>Get In Touch</h3>
+                    <div class="inputGroup">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="inputGroup">
+                        <input type="number" placeholder="Your Number" required>
+                        <input type="text" placeholder="Your Subject">
+                    </div>
+                    <textarea placeholder="Your Message" name="message" cols="30" rows="10" required></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Social Media Links -->
+            <div class="social-links">
+                <a href="###" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="###" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="###" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="###" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <!-- Copyright and Credits -->
+            <div class="footer-text">
+                <p>&copy; 2024 Travel Myanmar. All Rights Reserved.</p>
+                <p>Develope by <span>Min Naing Oo</span></p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- External JavaScript File -->
     <script src="js/script.js"></script>
 </body>
 
